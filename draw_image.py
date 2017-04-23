@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+
+# Released under the "Do whatever you want with it, it's a lot of copypasta 
+# code anyway" license.
+
 import pygame
 import sys
 import time
