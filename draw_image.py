@@ -41,6 +41,9 @@ pygame.init()
 
 def refresh_images():
 	logging.info("Refreshing images.")
+
+	# note: if you want clouds, make sure you get clouds.  You can find them on the xplanet website.  
+	# I use a cronjob to grab them daily.
 	earth_cmd="xplanet -projection rectangular -geometry 800x480  -config overlay_clouds -output "+ EARTHIMAGE_PATH +" -verbosity 10 -num_times 1"
 	os.system(earth_cmd)
 	moon_cmd="xplanet -config moon_orbit -geometry 800x480  -radius 35 -num_times 1 -output "+MOONIMAGE_PATH
